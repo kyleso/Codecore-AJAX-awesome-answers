@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Awesome Answers SPA</title>
+
+		<link rel="stylesheet" href="styles/main.css" />
+		<script src="scripts/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar">
+				<a href="" data-target="welcome">Welcome</a> |
+				<a href="" data-target="question-index">Questions</a> |
+				<a href="" data-target="question-new">New Question</a>
+			</nav>
+		</header>
+		<main class="page active" id="welcome">
+			<h1>Welcome to Awesome Answers</h1>
+		</main>
+		<main class="page" id="question-show"></main>
+		<main class="page" id="question-index">
+			<h1>Questions</h1>
+			<ul class="question-list"></ul>
+		</main>
+		<main class="page" id="question-new">
+			<h1>New Question</h1>
+			<form id="new-question-form">
+				<div>
+					<label for="title">Title</label><br />
+					<input type="text" name="title" id="title" />
+				</div>
+				<div>
+					<label for="body">Body</label><br />
+					<textarea name="body" id="body"></textarea>
+				</div>
+				<input type="submit" value="Create Question" />
+			</form>
+		</main>
+		<main class="page" id="question-edit">
+			<h1>Edit Question</h1>
+			<form id="edit-question-form">
+				<div>
+					<label for="title">Title</label><br />
+					<input type="text" name="title" id="title" />
+				</div>
+				<div>
+					<label for="body">Body</label><br />
+					<textarea name="body" id="body"></textarea>
+				</div>
+				<input type="hidden" value="" name="id" />
+				<input type="submit" value="Update Question" />
+			</form>
+		</main>
+	</body>
+</html>
